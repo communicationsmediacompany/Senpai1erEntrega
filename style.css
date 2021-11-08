@@ -1,0 +1,2052 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: monospace;
+    }
+
+    
+    
+/*First Container*/
+
+
+    @media(min-width: 780px) and (max-width: 1920px) {
+
+        .firstcontainer {
+            height: 100vh;
+            width: 100vw;
+            background-image: url(./portada.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            display: grid;
+            grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+            grid-template-areas: "logo . . nav nav "
+                                 ". . . . ."
+                                 ". pageheader pageheader pageheader ."
+                                 ". . button . ."
+                                 ". . . . ." ;
+            }
+        
+        .navpag {
+            background-color: none;
+            grid-area: nav;
+            margin-top: 5rem;
+            margin-right: 5rem;
+        
+            }
+        
+        nav li {
+            font-family: inherit;
+            color: black;
+            font-size: 4rem;
+            display: inline-block;
+            font-weight: 700;
+            }
+        
+        nav a {
+            color: black;
+            text-decoration: none;
+            }
+        
+        .navpag a:hover {
+            color: white;
+            background-color: black;
+            border-radius: 1rem;
+            }
+        
+        .pageheader {
+            font-size: 7rem;
+            font-family: inherit;
+            grid-area: pageheader;
+            text-align: center;
+            color: black;
+            }
+        
+        .pageheader:hover {
+                color: white;
+            }
+            
+        .firstb {
+            grid-area: button;
+            color: black;
+            font-size: 5rem;
+            width: 80rem;
+            height: 10rem;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+            }
+        
+        .firstb a {
+            text-decoration: none;
+            font-size: 4rem;
+            text-align: center;
+            }
+
+        .firstb a:hover {
+                color: white;
+            }
+        
+        
+        .logo {
+            grid-area: logo;
+            margin-top: 1rem;
+            margin-left: 1rem;
+            }
+        
+            
+            .logo:hover {
+                background-color: white;
+                border-radius: 2rem;
+            }
+
+    }
+
+    @media(min-width: 430px) and (max-width: 779px) {
+
+        .firstcontainer {
+            height: 100vh;
+            width: 100vw;
+            background-image: url(./portada.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            display: grid;
+            grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+            grid-template-areas: "logo nav "
+                                 "pageheader pageheader"
+                                 "button button" ;
+            }
+        
+        .navpag {
+            background-color: none;
+            grid-area: nav;
+            margin-top: 5rem;
+            margin-right: 5rem;
+        
+            }
+        
+        nav li {
+            font-family: inherit;
+            color: black;
+            font-size: 4rem;
+            display: inline-block;
+            font-weight: 700;
+            }
+        
+        nav a {
+            color: black;
+            text-decoration: none;
+            }
+        
+        .navpag a:hover {
+            color: white;
+            background-color: black;
+            border-radius: 1rem;
+            }
+        
+        .pageheader {
+            font-size: 7rem;
+            font-family: inherit;
+            grid-area: pageheader;
+            text-align: center;
+            color: black;
+            }
+        
+        .pageheader:hover {
+                color: white;
+            }
+            
+        .firstb {
+            grid-area: button;
+            color: black;
+            font-size: 5rem;
+            width: 60rem;
+            height: 10rem;
+            align-items: center;
+            padding: 2rem;
+            border-radius: 1rem;
+            text-align: center;
+            text-decoration: none;
+            }
+        
+        button a {
+            font-size: 4rem;
+            margin-right: 50rem;
+            margin-left: 50rem;
+            }
+        
+        
+        .logo {
+            grid-area: logo;
+            margin-top: 1rem;
+            margin-left: 1rem;
+            }
+        
+            
+            .logo:hover {
+                background-color: white;
+                border-radius: 2rem;
+            }
+
+    }
+
+    @media(max-width: 429px) {
+
+        .firstcontainer {
+            height: 150vh;
+            width: 250vw;
+            background-image: url(./portada.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            display: grid;
+            grid-template: repeat(4, 1fr) / repeat(1, 1fr);
+            grid-template-areas: "nav"
+                                 "pageheader"
+                                 "logo"                                 
+                                 "button" ;
+            }
+        
+        .navpag {
+            background-color: none;
+            grid-area: nav;
+            margin-top: 5rem;
+            text-align: center;
+            }
+        
+        nav li {
+            font-family: inherit;
+            color: black;
+            font-size: 6rem;
+            display: inline-block;
+            font-weight: 700;
+            }
+        
+        nav a {
+            color: black;
+            text-decoration: none;
+            }
+        
+        .navpag a:hover {
+            color: white;
+            background-color: black;
+            border-radius: 1rem;
+            }
+        
+        .pageheader {
+            font-size: 6rem;
+            font-family: inherit;
+            grid-area: pageheader;
+            text-align: center;
+            color: black;
+            margin-top: 5rem;
+            }
+        
+        .pageheader:hover {
+                color: white;
+            }
+            
+        .firstb {
+            grid-area: button;
+            font-size: 5rem;
+            text-align: center;
+            }
+        
+        .firstb a {
+            text-decoration: none;
+            color: black;
+            margin: 2%;
+            }
+
+        .firstb a:hover {
+            color: white;
+        }
+        
+        
+        .logo {
+            padding: 3rem;
+            grid-area: logo;
+            border-radius: 2rem;
+            align-items: center;
+            margin-left: 50rem;
+            }
+                   
+    }
+
+/*Second Container*/
+    
+    @media(min-width: 780px) and (max-width: 1920px) {
+
+.secondcontainer {
+    background-image: url(./sec2.jpg) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1 fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . pagesubtitle . ."
+                         ". pagesubtext pagesubtext pagesubtext ."
+                         ". . button2 . ."
+                        ". imaa imab imac ."
+                        ". texa texb texc ."
+                        ". . . . ."
+                        "banner1 banner1 banner1 banner1 banner1"                       
+                         ;
+}
+
+.pagesubtitle {
+    font-size: 6rem;
+    color: black;
+    grid-area: pagesubtitle;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.pagesubtext {
+    grid-area: pagesubtext;
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.imaa {
+    grid-area: imaa;
+    margin: 2rem;
+    width: 60%;
+    height: 60%;
+    text-align: center;
+    align-items: center;
+}
+
+.imaa:hover {
+    transform: scale(1.1);
+}
+
+.imab {
+    grid-area: imab;
+    margin: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.imab:hover {
+    transform: scale(1.1);
+}
+
+.imac {
+    grid-area: imac;
+    margin: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.imac:hover {
+    transform: scale(1.1);
+}
+
+.button2 {
+    grid-area: button2;
+    background-color: white;
+    color: black;
+    font-size: 4rem;
+    width: 15rem;
+    height: 5rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5%;
+    margin-left: 38%;
+    border-radius: 1rem;
+}
+
+.texa {
+    text-align: justify;
+    font-size: 2rem;
+    color: white;
+    grid-area: texa;
+    padding: 3rem;
+}
+
+.texb {
+    text-align: justify;
+    font-size: 2rem;
+    color: white;
+    grid-area: texb;
+    padding: 3rem;
+}
+
+.texc {
+    text-align: justify;
+    font-size: 2rem;
+    color: white;
+    grid-area: texc;
+    padding: 3rem;
+}
+
+.banner1 {
+    grid-area: banner1;
+    margin-bottom: -1rem;
+    padding: 0rem;
+}
+
+    }
+
+    @media(min-width: 430px) and (max-width: 778px) {
+
+    .secondcontainer {
+        height: 100vh;
+        width: 100vw;
+        background-image: url(./sec2.jpg) ;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1 fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: ". pagesubtitle ."
+                             "pagesubtext pagesubtext pagesubtext"
+                             ". button2 ."
+                            "imaa imab imac"
+                            "texa texb texc"
+                            ". . ."
+                            "banner1 banner1 banner1"                       
+                             ;
+    }
+    
+    .pagesubtitle {
+        font-size: 6rem;
+        color: black;
+        grid-area: pagesubtitle;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    
+    .pagesubtext {
+        grid-area: pagesubtext;
+        color: black;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    }
+    
+    .imaa {
+        grid-area: imaa;
+        margin: 2rem;
+        width: 60%;
+        height: 60%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .imab {
+        grid-area: imab;
+        margin: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .imac {
+        grid-area: imac;
+        margin: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .button2 {
+        grid-area: button2;
+        background-color: white;
+        color: black;
+        font-size: 4rem;
+        width: 15rem;
+        height: 5rem;
+        text-align: center;
+        text-decoration: none;
+        margin: 5%;
+        margin-left: 38%;
+        border-radius: 1rem;
+    }
+    
+    .texa {
+        text-align: justify;
+        font-size: 2rem;
+        color: white;
+        grid-area: texa;
+        padding: 3rem;
+    }
+    
+    .texb {
+        text-align: justify;
+        font-size: 2rem;
+        color: white;
+        grid-area: texb;
+        padding: 3rem;
+    }
+    
+    .texc {
+        text-align: justify;
+        font-size: 2rem;
+        color: white;
+        grid-area: texc;
+        padding: 3rem;
+    }
+    
+    .banner1 {
+        grid-area: banner1;
+        margin-bottom: -1rem;
+        padding: 0rem;
+    }
+    
+    }
+
+    @media(max-width: 429px) {
+
+        .secondcontainer {
+            height: 350vh;
+            width: 250vw;
+            background-image: url(./sec2.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "pagesubtitle"
+                                 "pagesubtext"
+                                 "button2"
+                                 "imaa"
+                                 "texa"
+                                 "imab"
+                                 "texb"
+                                 "imac"
+                                 "texc"
+                                 "."
+                                 "banner1";
+
+        }
+        
+        .pagesubtitle {
+            font-size: 5rem;
+            color: black;
+            grid-area: pagesubtitle;
+            text-align: center;
+            margin-top: 3rem;
+            padding: auto;     
+        }
+        
+        .pagesubtext {
+            grid-area: pagesubtext;
+            color: black;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .imaa {
+            grid-area: imaa;
+            margin: 2rem;
+            text-align: center;
+            align-items: center;
+        }
+        
+        .imab {
+            grid-area: imab;
+            margin: 2rem;
+            text-align: center;
+            align-items: center;
+        }
+        
+        .imac {
+            grid-area: imac;
+            margin: 2rem;
+            text-align: center;
+            align-items: center;
+        }
+        
+        .button2 {
+            grid-area: button2;
+            background-color: white;
+            color: black;
+            font-size: 4rem;
+            width: 15rem;
+            height: 5rem;
+            text-align: center;
+            text-decoration: none;
+            margin: 5%;
+            margin-left: 38%;
+            border-radius: 1rem;
+        }
+        
+        .texa {
+            text-align: center;
+            font-size: 3rem;
+            color: white;
+            grid-area: texa;
+            padding: 3rem;
+        }
+        
+        .texb {
+            text-align: center;
+            font-size: 3rem;
+            color: white;
+            grid-area: texb;
+            padding: 3rem;
+        }
+        
+        .texc {
+            text-align: center;
+            font-size: 3rem;
+            color: white;
+            grid-area: texc;
+            padding: 3rem;
+        }
+        
+        .banner1 {
+            grid-area: banner1;
+            margin-bottom: -1rem;
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+        }
+        
+    }
+     
+/*Third Container*/
+
+    @media(min-width: 780px) and (max-width: 1920px) {
+
+.thirdcontainer {
+    background-image: url(./fondo\ industria.jpg) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1 fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . pagesubtitle2 . ."
+                         ". pagesubtext2 pagesubtext2 pagesubtext2 ."
+                         ". . button3 . ."
+                        ". imaaa imabb imacc ."
+                        ". texaa texbb texcc ."
+                        ". . . . ."
+                        "banner2 banner2 banner2 banner2 banner2"                       
+                         ;
+}
+
+.pagesubtitle2 {
+    font-size: 6rem;
+    color: white;
+    grid-area: pagesubtitle2;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.pagesubtext2 {
+    grid-area: pagesubtext2;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.imaaa {
+    grid-area: imaaa;
+    margin: 2rem;
+    width: 60%;
+    height: 60%;
+    text-align: center;
+    align-items: center;
+}
+
+.imaaa:hover {
+    transform: scale(1.1);
+}
+
+.imabb {
+    grid-area: imabb;
+    margin: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.imabb:hover {
+    transform: scale(1.1);
+}
+
+.imacc {
+    grid-area: imacc;
+    margin: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.imacc:hover {
+    transform: scale(1.1);
+}
+
+.button3 {
+    grid-area: button3;
+    background-color: white;
+    color: black;
+    font-size: 4rem;
+    width: 15rem;
+    height: 5rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5%;
+    margin-left: 38%;
+    border-radius: 1rem;
+}
+
+.texaa {
+    text-align: justify;
+    font-size: 2rem;
+    color: white;
+    grid-area: texaa;
+    padding: 3rem;
+}
+
+
+#texaaa {
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 2rem;
+    text-align: justify;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin: 2rem;
+}
+
+#texaaa:hover {
+    opacity: 1;
+}
+
+.texbb {
+    text-align: justify;
+    font-size: 2rem;
+    color: white;
+    grid-area: texbb;
+    padding: 3rem;
+}
+
+
+#texbbb {
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 2rem;
+    text-align: justify;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin: 2rem;
+}
+
+#texbbb:hover {
+    opacity: 1;
+}
+
+.texcc {
+    text-align: justify;
+    font-size: 2rem;
+    color: white;
+    grid-area: texcc;
+    padding: 3rem;
+}
+
+#texccc {
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 2rem;
+    text-align: justify;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin: 2rem;
+}
+
+#texccc:hover {
+    opacity: 1;
+}
+
+.banner2 {
+    grid-area: banner2;
+}
+
+}
+
+    @media(min-width: 430px) and (max-width: 779px) {
+
+    .thirdcontainer {
+        background-image: url(./fondo\ industria.jpg) ;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1 fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: ". pagesubtitle2 ."
+                             "pagesubtext2 pagesubtext2 pagesubtext2"
+                             ". button3 ."
+                            "imaaa imabb imacc"
+                            "texaa texbb texcc"
+                            ". . ."
+                            "banner2 banner2 banner2"                       
+                             ;
+    }
+    
+    .pagesubtitle2 {
+        font-size: 6rem;
+        color: white;
+        grid-area: pagesubtitle2;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    
+    .pagesubtext2 {
+        grid-area: pagesubtext2;
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    }
+    
+    .imaaa {
+        grid-area: imaaa;
+        margin: 2rem;
+        width: 60%;
+        height: 60%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .imabb {
+        grid-area: imabb;
+        margin: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .imacc {
+        grid-area: imacc;
+        margin: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .button3 {
+        grid-area: button3;
+        background-color: white;
+        color: black;
+        font-size: 4rem;
+        width: 15rem;
+        height: 5rem;
+        text-align: center;
+        text-decoration: none;
+        margin: 5%;
+        margin-left: 38%;
+        border-radius: 1rem;
+    }
+    
+    .texaa {
+        text-align: justify;
+        font-size: 2rem;
+        color: white;
+        grid-area: texaa;
+        padding: 3rem;
+    }
+    
+    
+    #texaaa {
+        background-color: black;
+        opacity: 0.5;
+        border-radius: 2rem;
+        text-align: justify;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin: 2rem;
+    }
+    
+    #texaaa:hover {
+        opacity: 1;
+    }
+    
+    .texbb {
+        text-align: justify;
+        font-size: 2rem;
+        color: white;
+        grid-area: texbb;
+        padding: 3rem;
+    }
+    
+    
+    #texbbb {
+        background-color: black;
+        opacity: 0.5;
+        border-radius: 2rem;
+        text-align: justify;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin: 2rem;
+    }
+    
+    #texbbb:hover {
+        opacity: 1;
+    }
+    
+    .texcc {
+        text-align: justify;
+        font-size: 2rem;
+        color: white;
+        grid-area: texcc;
+        padding: 3rem;
+    }
+    
+    #texccc {
+        background-color: black;
+        opacity: 0.5;
+        border-radius: 2rem;
+        text-align: justify;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin: 2rem;
+    }
+    
+    #texccc:hover {
+        opacity: 1;
+    }
+    
+    .banner2 {
+        grid-area: banner2;
+    }
+    
+    }
+
+    @media(max-width: 429px) {
+
+        .thirdcontainer {
+            margin-top: 15rem;
+            height: 350vh;
+            width: 250vw;
+            background-image: url(./fondo\ industria.jpg) ;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "pagesubtitle2"
+                                 "pagesubtext2"
+                                 "button3"
+                                "imaaa"
+                                "texaa"
+                                "imabb"
+                                "texbb"
+                                "imacc"
+                                "texcc"
+                                "."
+                                "banner2";
+        }
+        
+        .pagesubtitle2 {
+            font-size: 5rem;
+            color: white;
+            grid-area: pagesubtitle2;
+            text-align: center;
+            margin-top: 15rem;
+            padding: auto;
+        }
+        
+        .pagesubtext2 {
+            grid-area: pagesubtext2;
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .imaaa {
+            grid-area: imaaa;
+            margin: 2rem;
+            text-align: center;
+            align-items: center;
+        }
+        
+        .imabb {
+            grid-area: imabb;
+            margin: 2rem;
+            text-align: center;
+            align-items: center;
+        }
+        
+        .imacc {
+            grid-area: imacc;
+            margin: 2rem;
+            text-align: center;
+            align-items: center;
+        }
+        
+        .button3 {
+            grid-area: button3;
+            background-color: white;
+            color: black;
+            font-size: 4rem;
+            width: 15rem;
+            height: 5rem;
+            text-align: center;
+            text-decoration: none;
+            margin: 5%;
+            margin-left: 38%;
+            border-radius: 1rem;
+        }
+        
+        .texaa {
+            text-align: justify;
+            font-size: 3rem;
+            color: white;
+            grid-area: texaa;
+            padding: 3rem;
+        }
+        
+        
+        #texaaa {
+            background-color: black;
+            opacity: 0.5;
+            border-radius: 2rem;
+            text-align: justify;
+            align-items: center;
+            margin-bottom: 2rem;
+            margin: 2rem;
+        }
+        
+        #texaaa:hover {
+            opacity: 1;
+        }
+        
+        .texbb {
+            text-align: justify;
+            font-size: 3rem;
+            color: white;
+            grid-area: texbb;
+            padding: 3rem;
+        }
+        
+        
+        #texbbb {
+            background-color: black;
+            opacity: 0.5;
+            border-radius: 2rem;
+            text-align: justify;
+            align-items: center;
+            margin-bottom: 2rem;
+            margin: 2rem;
+        }
+        
+        #texbbb:hover {
+            opacity: 1;
+        }
+        
+        .texcc {
+            text-align: justify;
+            font-size: 3rem;
+            color: white;
+            grid-area: texcc;
+            padding: 3rem;
+        }
+        
+        #texccc {
+            background-color: black;
+            opacity: 0.5;
+            border-radius: 2rem;
+            text-align: justify;
+            align-items: center;
+            margin-bottom: 2rem;
+            margin: 2rem;
+        }
+        
+        #texccc:hover {
+            opacity: 1;
+        }
+        
+        .banner2 {
+            grid-area: banner2;
+            margin-bottom: -1rem;
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+        }
+        
+    }
+
+/*Fourth Container*/
+
+@media(min-width: 780px) and (max-width: 1920px) {
+
+    .fourthcontainer {
+        background-image: url(./seguros\ agropecuarios.jpg) ;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1 fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: ". . pagesubtitle3 . ."
+                             ". pagesubtext3 pagesubtext3 pagesubtext3 ."
+                             ". . button4 . ."
+                            ". imaaa2 imabb2 imacc2 ."
+                            ". texaa2 texbb2 texcc2 ."
+                            ". . . . ."
+                            "banner3 banner3 banner3 banner3 banner3"                       
+                             ;
+    }
+    
+    .pagesubtitle3 {
+        font-size: 6rem;
+        color: white;
+        grid-area: pagesubtitle3;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    
+    .pagesubtext3 {
+        grid-area: pagesubtext3;
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    }
+    
+    .imaaa2 {
+        grid-area: imaaa2;
+        margin: 2rem;
+        width: 60%;
+        height: 60%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .imaaa2:hover {
+        transform: scale(1.1);
+    }
+
+    .imabb2 {
+        grid-area: imabb2;
+        margin: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .imabb2:hover {
+        transform: scale(1.1);
+    }
+    
+    .imacc2 {
+        grid-area: imacc2;
+        margin: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .imacc2:hover {
+        transform: scale(1.1);
+    }
+    
+    .button4{
+        grid-area: button4;
+        background-color: white;
+        color: black;
+        font-size: 4rem;
+        width: 15rem;
+        height: 5rem;
+        text-align: center;
+        text-decoration: none;
+        margin: 5%;
+        margin-left: 38%;
+        border-radius: 1rem;
+    }
+    
+    .texaa2 {
+        text-align: justify;
+        font-size: 2rem;
+        color: white;
+        grid-area: texaa2;
+        padding: 3rem;
+    }
+    
+    #texaaa2 {
+        background-color: black;
+        opacity: 0.5;
+        border-radius: 2rem;
+        text-align: justify;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin: 2rem;
+    }
+    
+    #texaaa2:hover {
+        opacity: 1;
+    }
+    
+    .texbb2 {
+        text-align: justify;
+        font-size: 2rem;
+        color: white;
+        grid-area: texbb2;
+        padding: 3rem;
+    }
+    
+    #texbbb2 {
+        background-color: black;
+        opacity: 0.5;
+        border-radius: 2rem;
+        text-align: justify;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin: 2rem;
+    }
+    
+    #texbbb2:hover {
+        opacity: 1;
+    }
+    
+    .texcc2 {
+        text-align: justify;
+        font-size: 2rem;
+        color: white;
+        grid-area: texcc2;
+        padding: 3rem;
+    }
+    
+    #texccc2 {
+        background-color: black;
+        opacity: 0.5;
+        border-radius: 2rem;
+        text-align: justify;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin: 2rem;
+    }
+    
+    #texccc2:hover {
+        opacity: 1;
+    }
+    
+    .banner3 {
+        grid-area: banner3;
+        margin-bottom: -1rem;
+    }
+
+
+
+}
+
+@media(min-width: 430px) and (max-width: 779px) {
+
+    .fourthcontainer {
+        background-image: url(./seguros\ agropecuarios.jpg) ;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1 fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: ". pagesubtitle3 ."
+                             "pagesubtext3 pagesubtext3 pagesubtext3"
+                             ". button4 ."
+                            "imaaa2 imabb2 imacc2"
+                            "texaa2 texbb2 texcc2"
+                            ". . ."
+                            "banner3 banner3 banner3"                       
+                             ;
+    }
+    
+    .pagesubtitle3 {
+        font-size: 6rem;
+        color: white;
+        grid-area: pagesubtitle3;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    
+    .pagesubtext3 {
+        grid-area: pagesubtext3;
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    }
+    
+    .imaaa2 {
+        grid-area: imaaa2;
+        margin: 2rem;
+        width: 60%;
+        height: 60%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .imabb2 {
+        grid-area: imabb2;
+        margin: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .imacc2 {
+        grid-area: imacc2;
+        margin: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .button4{
+        grid-area: button4;
+        background-color: white;
+        color: black;
+        font-size: 4rem;
+        width: 15rem;
+        height: 5rem;
+        text-align: center;
+        text-decoration: none;
+        margin: 5%;
+        margin-left: 38%;
+        border-radius: 1rem;
+    }
+    
+    .texaa2 {
+        text-align: justify;
+        font-size: 2rem;
+        color: white;
+        grid-area: texaa2;
+        padding: 3rem;
+    }
+    
+    #texaaa2 {
+        background-color: black;
+        opacity: 0.5;
+        border-radius: 2rem;
+        text-align: justify;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin: 2rem;
+    }
+    
+    #texaaa2:hover {
+        opacity: 1;
+    }
+    
+    .texbb2 {
+        text-align: justify;
+        font-size: 2rem;
+        color: white;
+        grid-area: texbb2;
+        padding: 3rem;
+    }
+    
+    #texbbb2 {
+        background-color: black;
+        opacity: 0.5;
+        border-radius: 2rem;
+        text-align: justify;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin: 2rem;
+    }
+    
+    #texbbb2:hover {
+        opacity: 1;
+    }
+    
+    .texcc2 {
+        text-align: justify;
+        font-size: 2rem;
+        color: white;
+        grid-area: texcc2;
+        padding: 3rem;
+    }
+    
+    #texccc2 {
+        background-color: black;
+        opacity: 0.5;
+        border-radius: 2rem;
+        text-align: justify;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin: 2rem;
+    }
+    
+    #texccc2:hover {
+        opacity: 1;
+    }
+    
+    .banner3 {
+        grid-area: banner3;
+        margin-bottom: -1rem;
+    }
+
+
+
+}
+
+@media(max-width: 429px) {
+
+    .fourthcontainer {
+        margin-top: 38rem;
+        height: 350vh;
+        width: 250vw;
+        background-image: url(./seguros\ agropecuarios.jpg) ;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "pagesubtitle3"
+                             "pagesubtext3"
+                             "button4"
+                             "imaaa2"
+                             "texaa2"
+                             "imabb2"
+                             "texbb2"
+                             "imacc2"
+                             "texcc2"
+                             "."
+                             "banner3";
+    }
+    
+    .pagesubtitle3 {
+        font-size: 5rem;
+        color: white;
+        grid-area: pagesubtitle3;
+        text-align: center;
+        margin-top: 8rem;
+        padding: auto;
+    }
+    
+    .pagesubtext3 {
+        grid-area: pagesubtext3;
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .imaaa2 {
+        grid-area: imaaa2;
+        margin: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .imabb2 {
+        grid-area: imabb2;
+        margin: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .imacc2 {
+        grid-area: imacc2;
+        margin: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .button4{
+        grid-area: button4;
+        background-color: white;
+        color: black;
+        font-size: 4rem;
+        width: 15rem;
+        height: 5rem;
+        text-align: center;
+        text-decoration: none;
+        margin: 5%;
+        margin-left: 38%;
+        border-radius: 1rem;
+    }
+    
+    .texaa2 {
+        text-align: justify;
+        font-size: 3rem;
+        color: white;
+        grid-area: texaa2;
+        padding: 3rem;
+    }
+    
+    #texaaa2 {
+        background-color: black;
+        opacity: 0.5;
+        border-radius: 3rem;
+        text-align: justify;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin: 2rem;
+    }
+    
+    #texaaa2:hover {
+        opacity: 1;
+    }
+    
+    .texbb2 {
+        text-align: justify;
+        font-size: 3rem;
+        color: white;
+        grid-area: texbb2;
+        padding: 3rem;
+    }
+    
+    #texbbb2 {
+        background-color: black;
+        opacity: 0.5;
+        border-radius: 2rem;
+        text-align: justify;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin: 2rem;
+    }
+    
+    #texbbb2:hover {
+        opacity: 1;
+    }
+    
+    .texcc2 {
+        text-align: justify;
+        font-size: 3rem;
+        color: white;
+        grid-area: texcc2;
+        padding: 3rem;
+    }
+    
+    #texccc2 {
+        background-color: black;
+        opacity: 0.5;
+        border-radius: 2rem;
+        text-align: justify;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin: 2rem;
+    }
+    
+    #texccc2:hover {
+        opacity: 1;
+    }
+    
+    .banner3 {
+        grid-area: banner3;
+        margin-bottom: -1rem;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+    }
+
+
+
+}
+
+/*Footer*/
+
+@media(min-width: 780px) and (max-width: 1920px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "info info logos nosotros nosotros";
+        background-color: white;
+        height: 40rem;
+    }
+    
+    
+    .info {
+        padding: 3rem;
+        color: black;
+        font-size: 3rem;
+        padding: 1rem;
+        grid-area: info;
+        align-items: center;
+        margin-top: 13rem;
+        text-align: center;
+    }
+    
+    .nosotros {
+        padding: 3rem;
+        color: black;
+        font-size: 3rem;
+        padding: 1rem;
+        grid-area: nosotros;
+        align-items: center;
+        margin-top: 13rem;
+        text-align: center;
+    }
+    
+    .logos {
+        padding: 3rem;
+        grid-area: logos;
+        margin-top: 8rem;
+        border-radius: 2rem;
+        align-items: center;
+    }
+
+    .logos:hover {
+        transform: scale(1.2);
+    }
+
+}
+
+@media(min-width: 430px) and (max-width: 779px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "info info logos nosotros nosotros";
+        background-color: white;
+        height: 40rem;
+    }
+    
+    
+    .info {
+        padding: 3rem;
+        color: black;
+        font-size: 3rem;
+        padding: 1rem;
+        grid-area: info;
+        align-items: center;
+        margin-top: 13rem;
+        text-align: center;
+    }
+    
+    .nosotros {
+        padding: 3rem;
+        color: black;
+        font-size: 3rem;
+        padding: 1rem;
+        grid-area: nosotros;
+        align-items: center;
+        margin-top: 13rem;
+        text-align: center;
+    }
+    
+    .logos {
+        padding: 3rem;
+        grid-area: logos;
+        margin-top: 8rem;
+        border-radius: 2rem;
+        align-items: center;
+    }
+
+}
+
+@media(max-width: 429px) {
+
+    .footer {
+        height: 350vh;
+        width: 250vw;
+        margin-top: 25rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "info"
+                             "logos" 
+                             "nosotros";
+        background-color: white;
+        height: 40rem;
+    }
+    
+    
+    .info {
+        padding: 3rem;
+        color: black;
+        font-size: 5rem;
+        padding: 1rem;
+        grid-area: info;
+        align-items: center;
+        margin-top: 23rem;
+        text-align: center;
+    }
+    
+    .nosotros {
+        padding: 3rem;
+        color: black;
+        font-size: 5rem;
+        padding: 1rem;
+        grid-area: nosotros;
+        align-items: center;
+        margin-top: 5rem;
+        text-align: center;
+        margin-bottom: 35rem;
+    }
+    
+    .logos {
+        padding: 3rem;
+        grid-area: logos;
+        margin-top: 8rem;
+        border-radius: 2rem;
+        align-items: center;
+        margin-left: 25rem;
+        width: 60%;
+        height: 50%;
+    }
+
+}
+
+
+/*Nosotros Page*/
+
+@media(min-width: 780px) and (max-width: 1920px) {
+
+    .newpage {
+        height: 150vh;
+        width: 100vw;
+        background-image: url(./nosotros.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: grid;
+        grid-template: repeat(6, 1fr) / repeat(5, 1fr);
+        grid-template-areas: "logonos . . nav nav "
+                             ". nosotrosheader nosotrosheader nosotrosheader ."
+                             ". nosotrosh2 nosotrosh2 nosotrosh2 ."
+                             ". . fotohermanos . ."
+                             ". nosotrosp nosotrosp nosotrosp ."
+                             ". . . . ." ;
+        }
+    
+    .navpag {
+        background-color: none;
+        grid-area: nav;
+        margin-top: 5rem;
+        margin-right: 5rem;
+    
+        }
+    
+    nav li {
+        font-family: inherit;
+        color: black;
+        font-size: 4rem;
+        display: inline-block;
+        font-weight: 700;
+        }
+    
+    nav a {
+        color: black;
+        text-decoration: none;
+        }
+    
+    .navpag a:hover {
+        color: white;
+        background-color: black;
+        border-radius: 1rem;
+        }
+    
+    .nosotrosheader {
+        font-size: 6rem;
+        font-family: inherit;
+        grid-area: nosotrosheader;
+        text-align: center;
+        color: white;
+        }
+
+    #nosotrosheader {
+        background-color: black;
+        border-radius: 2rem;
+        opacity: 0.5;
+    }
+    
+    #nosotrosheader:hover {
+            color: white;
+            opacity: 1;
+        }
+        
+    .nosotrosh2 {
+        grid-area: nosotrosh2;
+        color: black;
+        font-size: 5rem;
+        text-align: center;
+        padding: 2rem;
+        }
+
+    .nosotrosh2:hover {
+            color: white;
+        }
+
+    .nosotrosp {
+        grid-area: nosotrosp;
+        font-size: 3rem;
+        color: white;
+    }
+
+    #nosotrospp {
+        background-color: black;
+        border-radius: 1rem;
+        opacity: 0.5;
+        margin-top: 3rem;
+    }
+
+    #nosotrospp:hover {
+        opacity: 1;
+    }
+    
+    .logonos {
+        grid-area: logonos;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        }
+    
+        
+        .logonos:hover {
+            background-color: white;
+            border-radius: 2rem;
+        }
+
+    .fotoantigua {
+        grid-area: fotohermanos;
+    }
+
+    .fotoantigua:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media(min-width: 430px) and (max-width: 779px) {
+
+    .newpage {
+        height: 150vh;
+        width: 100vw;
+        background-image: url(./nosotros.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: grid;
+        grid-template: repeat(6, 1fr) / repeat(3, 1fr);
+        grid-template-areas: "logonos . nav "
+                             "nosotrosheader nosotrosheader nosotrosheader"
+                             "nosotrosh2 nosotrosh2 nosotrosh2"
+                             ". fotohermanos ."
+                             "nosotrosp nosotrosp nosotrosp"
+                             ". . ." ;
+        }
+    
+    .navpag {
+        background-color: none;
+        grid-area: nav;
+        margin-top: 5rem;
+        margin-right: 5rem;
+    
+        }
+    
+    nav li {
+        font-family: inherit;
+        color: black;
+        font-size: 4rem;
+        display: inline-block;
+        font-weight: 700;
+        }
+    
+    nav a {
+        color: black;
+        text-decoration: none;
+        }
+    
+    .navpag a:hover {
+        color: white;
+        background-color: black;
+        border-radius: 1rem;
+        }
+    
+    .nosotrosheader {
+        font-size: 4rem;
+        font-family: inherit;
+        grid-area: nosotrosheader;
+        text-align: center;
+        color: white;
+        }
+
+    #nosotrosheader {
+        background-color: black;
+        border-radius: 2rem;
+        opacity: 0.5;
+    }
+    
+    #nosotrosheader:hover {
+            color: white;
+            opacity: 1;
+        }
+        
+    .nosotrosh2 {
+        grid-area: nosotrosh2;
+        color: black;
+        font-size: 3rem;
+        text-align: center;
+        padding: 2rem;
+        }
+
+    .nosotrosh2:hover {
+            color: white;
+        }
+
+    .nosotrosp {
+        grid-area: nosotrosp;
+        font-size: 2rem;
+        color: white;
+    }
+
+    #nosotrospp {
+        background-color: black;
+        border-radius: 1rem;
+        opacity: 0.5;
+        margin-top: 3rem;
+    }
+
+    #nosotrospp:hover {
+        opacity: 1;
+    }
+    
+    .logonos {
+        grid-area: logonos;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        }
+    
+        
+        .logonos:hover {
+            background-color: white;
+            border-radius: 2rem;
+        }
+
+    .fotoantigua {
+        grid-area: fotohermanos;
+    }
+
+    .fotoantigua:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media(max-width: 429px) {
+
+    .newpage {
+        height: 200vh;
+        width: 100vw;
+        background-image: url(./nosotros.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "nosotrosheader"
+                             "nosotrosh2"
+                             "fotohermanos"
+                             "nosotrosp"
+                             "." ;
+        }
+    
+    .navpag {
+        background-color: none;
+        grid-area: nav;
+        margin-top: 1rem;
+        margin-right: 5rem;
+    
+        }
+    
+    nav li {
+        font-family: inherit;
+        color: black;
+        font-size: 4rem;
+        display: inline-block;
+        font-weight: 700;
+        }
+    
+    nav a {
+        color: black;
+        text-decoration: none;
+        }
+    
+    .navpag a:hover {
+        color: white;
+        background-color: black;
+        border-radius: 1rem;
+        }
+    
+    .nosotrosheader {
+        font-size: 3rem;
+        font-family: inherit;
+        grid-area: nosotrosheader;
+        text-align: center;
+        color: white;
+        margin-top: 2rem;
+        }
+
+    #nosotrosheader {
+        background-color: black;
+        border-radius: 2rem;
+        opacity: 0.5;
+    }
+    
+    #nosotrosheader:hover {
+            color: white;
+            opacity: 1;
+        }
+        
+    .nosotrosh2 {
+        grid-area: nosotrosh2;
+        color: black;
+        font-size: 3rem;
+        text-align: center;
+        margin: 2rem;
+        }
+
+    .nosotrosh2:hover {
+            color: white;
+        }
+
+    .nosotrosp {
+        grid-area: nosotrosp;
+        font-size: 2rem;
+        color: white;
+    }
+
+    #nosotrospp {
+        background-color: black;
+        border-radius: 1rem;
+        opacity: 0.5;
+        margin-top: 3rem;
+    }
+
+    #nosotrospp:hover {
+        opacity: 1;
+    }
+
+    .fotoantigua {
+        grid-area: fotohermanos;
+    }
+
+    .fotoantigua:hover {
+        transform: scale(1.1);
+    }
+
+}
